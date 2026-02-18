@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="dashboard">
+        <h1>Cosmic Dashboard</h1>
+        <div class="card">
+            <h2>Local State</h2>
+            <pre id="state-data"></pre>
+            <canvas id="state-chart"></canvas>
+        </div>
+        <div class="card">
+            <h2>Public API Data</h2>
+            <pre id="public-data"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
