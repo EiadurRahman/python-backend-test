@@ -1,7 +1,6 @@
 import json
 import requests
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -31,11 +30,3 @@ async def get_state():
 async def get_public_data():
     response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
     return response.json()
-
-@app.get("/")
-async def read_index():
-    return FileResponse("../frontend/index.html")
-
-@app.get("/{filename:path}")
-async def read_static_file(filename: str):
-    return FileResponse(f"../frontend/{filename}")

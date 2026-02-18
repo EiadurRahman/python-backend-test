@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const publicDataElement = document.getElementById('public-data');
     const stateChartCanvas = document.getElementById('state-chart').getContext('2d');
 
+    // Replace this with your backend's actual URL once deployed (e.g., https://my-backend.onrender.com)
     const API_BASE_URL = 'http://127.0.0.1:8000';
 
     let stateChart;
